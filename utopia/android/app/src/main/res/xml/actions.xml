@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions xmlns:android="http://schemas.android.com/apk/res/android">
+    <action intentName="actions.intent.TRIGGER_EMERGENCY">
+        <fulfillment urlTemplate="utopia://emergency">
+            <parameter-mapping intentParameter="query" urlParameter="query"/>
+        </fulfillment>
+        <display
+            name="Trigger Emergency Alert"
+            description="Triggers an emergency alert through Utopia"/>
+    </action>
+</actions>
